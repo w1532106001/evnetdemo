@@ -16,8 +16,8 @@ public class EventDemoPublish {
     @Resource
     private ApplicationEventPublisher applicationEventPublisher;
 
-    public void publish(String message){
-        EventDemo eventDemo = new EventDemo(this,message);
+    public void publish(String message) {
+        EventDemo eventDemo = new EventDemo(this, message);
         applicationEventPublisher.publishEvent(eventDemo);
     }
 }

@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class EvnetdemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(EvnetdemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(EvnetdemoApplication.class, args);
+    }
 
 }

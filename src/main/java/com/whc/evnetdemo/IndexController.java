@@ -16,7 +16,7 @@ public class IndexController {
     private EventDemoPublish eventDemoPublish;
 
     @GetMapping("/push")
-    public String push(){
+    public String push() {
         eventDemoPublish.publish("处理订单");
         return "结束";
     }

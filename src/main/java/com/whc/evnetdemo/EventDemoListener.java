@@ -14,7 +14,7 @@ public class EventDemoListener implements ApplicationListener<EventDemo> {
     @EventType(value = EventTypeEnum.SYNC)
     @Override
     public void onApplicationEvent(EventDemo eventDemo) {
-        System.out.println("任务1线程名："+Thread.currentThread().getName());
+        System.out.println("任务1线程名：" + Thread.currentThread().getName());
         System.out.println("开始处理任务1");
         try {
             Thread.sleep(2000);

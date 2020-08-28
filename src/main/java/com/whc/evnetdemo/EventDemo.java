@@ -9,7 +9,8 @@ import org.springframework.context.ApplicationEvent;
 public class EventDemo extends ApplicationEvent {
 
     private final String message;
-    public EventDemo(Object source,String message) {
+
+    public EventDemo(Object source, String message) {
         super(source);
         this.message = message;
     }

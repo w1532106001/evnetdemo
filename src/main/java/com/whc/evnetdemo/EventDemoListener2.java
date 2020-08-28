@@ -13,7 +13,7 @@ public class EventDemoListener2 implements ApplicationListener<EventDemo> {
     @EventType(value = EventTypeEnum.ASYNC)
     @Override
     public void onApplicationEvent(EventDemo event) {
-        System.out.println("任务2线程名："+Thread.currentThread().getName());
+        System.out.println("任务2线程名：" + Thread.currentThread().getName());
         System.out.println("开始处理任务2");
         try {
             Thread.sleep(5000);
